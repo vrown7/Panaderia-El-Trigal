@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Panadería El Trigal</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="main.js" defer></script>
+</head>
+<body>
+
+  <header>
+    <h1>Panadería El Trigal</h1>
+    <p>Pan y pastelería de elaboración artesanal</p>
+  </header>
+
+  <main>
+    <!-- catalogo de productos -->
+    <section id="catalogo">
+      <h2>Nuestro Catálogo</h2>
+      <div class="grid-productos">
+        <!-- producto 1 -->
+        <article class="tarjeta-producto">
+          <img src="https://via.placeholder.com/300x200?text=Marraqueta" alt="Marraqueta">
+          <h3>Marraqueta</h3>
+          <p>Crujiente por fuera y suave por dentro. Clásico pan chileno.</p>
+          <span class="precio">$2.000 / kg</span>
+        </article>
+        <!-- producto 2 -->
+        <article class="tarjeta-producto">
+          <img src="https://via.placeholder.com/300x200?text=Hallulla" alt="Hallulla">
+          <h3>Hallulla</h3>
+          <p>Pan plano y redondo de miga compacta, especial para sándwiches.</p>
+          <span class="precio">$2.000 / kg</span>
+        </article>
+        <!-- producto 3 -->
+        <article class="tarjeta-producto">
+          <img src="https://via.placeholder.com/300x200?text=Pan+Masa+Madre" alt="Pan de Masa Madre">
+          <h3>Pan de Masa Madre</h3>
+          <p>Hogaza rústica fermentada naturalmente por 24 horas.</p>
+          <span class="precio">$3.500 / un</span>
+        </article>
+        <!-- producto 4 -->
+        <article class="tarjeta-producto">
+          <img src="https://via.placeholder.com/300x200?text=Empanada+Pino" alt="Empanada de Pino">
+          <h3>Empanada de Pino</h3>
+          <p>Tradicional de horno, con carne picada, aceituna y huevo duro.</p>
+          <span class="precio">$2.200 / un</span>
+        </article>
+        <!-- producto 5 -->
+        <article class="tarjeta-producto">
+          <img src="https://via.placeholder.com/300x200?text=Tartaleta" alt="Tartaleta de Frutas">
+          <h3>Tartaleta de Frutas</h3>
+          <p>Base de masa dulce con crema pastelera y fruta de la estación.</p>
+          <span class="precio">$8.900 / un</span>
+        </article>
+        <!-- producto 6 -->
+        <article class="tarjeta-producto">
+          <img src="https://via.placeholder.com/300x200?text=Croissant" alt="Croissant">
+          <h3>Croissant Clásico</h3>
+          <p>Masa de hojaldre con mantequilla, horneado a la perfección.</p>
+          <span class="precio">$1.500 / un</span>
+        </article>
+      </div>
+    </section>
+
+    <!-- formulario de contacto -->
+    <section id="contacto">
+      <h2>Envíanos tu consulta</h2>
+      <form id="form-contacto" novalidate>
+        
+        <div class="grupo-form">
+          <label for="nombre">Nombre completo *</label>
+          <input type="text" id="nombre" name="nombre" required>
+          <span class="error-msg" id="error-nombre">Por favor, ingresa tu nombre (no puede estar vacío).</span>
+        </div>
+
+        <div class="grupo-form">
+          <label for="correo">Correo electrónico *</label>
+          <input type="email" id="correo" name="correo" required>
+          <span class="error-msg" id="error-correo">Ingresa un correo válido (ej: usuario@dominio.cl).</span>
+        </div>
+
+        <div class="grupo-form">
+          <label for="telefono">Teléfono (opcional)</label>
+          <input type="text" id="telefono" name="telefono">
+        </div>
+
+        <div class="grupo-form">
+          <label for="motivo">Motivo de la consulta *</label>
+          <select id="motivo" name="motivo" required>
+            <option value="">Selecciona una opción</option>
+            <option value="consulta">Consulta general</option>
+            <option value="pedido">Pedido especial</option>
+            <option value="reclamo">Reclamo</option>
+            <option value="otro">Otro</option>
+          </select>
+          <span class="error-msg" id="error-motivo">Debes seleccionar un motivo.</span>
+        </div>
+
+        <div class="grupo-form">
+          <label for="mensaje">Mensaje *</label>
+          <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+          <span class="error-msg" id="error-mensaje">El mensaje no puede estar vacío.</span>
+        </div>
+
+        <button type="submit">Enviar consulta</button>
+        <p id="mensaje-exito"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2023 Panadería El Trigal. Todos los derechos reservados.</p>
+  </footer>
+
+</body>
+</html>
